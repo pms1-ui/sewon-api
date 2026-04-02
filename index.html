@@ -527,7 +527,7 @@
                 <a href="#risk" class="toc-item">7. 리스크 관리</a>
                 <a href="#communication" class="toc-item">8. 커뮤니케이션 계획</a>
                 <a href="#quality" class="toc-item">9. 품질 관리</a>
-                <a href="#future" class="toc-item">10. 향후 확장 계획</a>
+                <a href="#screen-dev" class="toc-item">10. 화면 단위 개발 시</a>
             </nav>
         </aside>
         <main class="main-content">
@@ -537,7 +537,7 @@
                 <h2 class="section-title">1. 프로젝트 개요</h2>
                 
                 <h3 class="subsection-title">1.1 배경</h3>
-                <p>차일디는 패션 유통 기업을 위한 AI 기반 BI(Business Intelligence) 시스템을 개발 중입니다. 현재 세원의 ERP/WMS 시스템을 사용하고 있으며, 데이터의 정적 활용에서 동적 활용으로의 전환이 필요한 시점입니다.</p>
+                <p>차일디는 패션 유통 기업을 위한 AI 기반 BI(Business Intelligence) 시스템을 개발 중입니다. <br>현재 세원의 ERP/WMS 시스템을 사용하고 있으며, 데이터의 정적 활용에서 동적 활용으로의 전환이 필요한 시점입니다.</p>
                 
                 <div class="info-box">
                     <strong>현재 상황의 문제점</strong>
@@ -1102,30 +1102,32 @@
                 </ul>
             </section>
             
-            <!-- 10. 향후 확장 계획 -->
-            <section class="section" id="future">
-                <h2 class="section-title">10. 향후 확장 계획</h2>
+            <!-- 10. 화면 단위 개발 시 -->
+            <section class="section" id="screen-dev">
+                <h2 class="section-title">10. 화면 단위 개발 시</h2>
                 
-                <h3 class="subsection-title">10.1 단기 (6개월 내)</h3>
-                <ul>
-                    <li>Webhook 기능 추가</li>
-                    <li>추가 도메인 API 개발 (필요 시)</li>
-                    <li>성능 최적화</li>
-                </ul>
+                <p>API 연동 대신 화면 단위로 개발할 경우, 다음 화면들이 필요합니다.</p>
                 
-                <h3 class="subsection-title">10.2 중기 (1년 내)</h3>
-                <ul>
-                    <li>실시간 데이터 스트리밍</li>
-                    <li>GraphQL API 지원 검토</li>
-                    <li>모바일 앱 연동</li>
-                </ul>
+                <div class="card">
+                    <h3 class="subsection-title">ERP 화면</h3>
+                    <ul>
+                        <li><strong>상품 정보 등록</strong> - 신규 상품 등록 및 수정</li>
+                        <li><strong>발주현황</strong> - 발주 내역 조회 및 관리</li>
+                        <li><strong>품번종합집계표</strong> - 품번별 재고, 판매, 입출고 종합 현황</li>
+                        <li><strong>일자별 판매 현황</strong> - 일자별 판매 데이터 조회</li>
+                    </ul>
+                </div>
                 
-                <h3 class="subsection-title">10.3 장기 (1년 이상)</h3>
-                <ul>
-                    <li>AI 모델 직접 연동</li>
-                    <li>예측 API 제공</li>
-                    <li>타 시스템 연동 확대</li>
-                </ul>
+                <div class="card">
+                    <h3 class="subsection-title">WMS 화면</h3>
+                    <ul>
+                        <li><strong>기간별 재고 현황</strong> - 기간별 재고 변동 및 현황 조회</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box">
+                    <strong>참고:</strong> 화면 단위 개발은 건별 비용이 높고 확장성이 낮아, API 기반 연동을 권장합니다.
+                </div>
             </section>
             
         </main>
