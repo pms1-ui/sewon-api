@@ -1,0 +1,6 @@
+# IDE settings
+.vscode/
+
+# Markdown files (replaced by HTML)
+*.md
+!README.md
